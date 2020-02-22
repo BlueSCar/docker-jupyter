@@ -9,4 +9,7 @@ RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-bu
 RUN jupyter labextension install jupyterlab-plotly@1.4.0 --no-build
 RUN jupyter labextension install plotlywidget@1.4.0 --no-build
 RUN jupyter lab build
+
+RUN pip install xgboost
+
 RUN unset NODE_OPTIONS
