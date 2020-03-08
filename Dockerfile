@@ -11,5 +11,6 @@ RUN jupyter labextension install plotlywidget@1.4.0 --no-build
 RUN jupyter lab build
 
 RUN pip install xgboost
+RUN pip install lightgbm
 
 RUN unset NODE_OPTIONS
