@@ -10,6 +10,7 @@ RUN jupyter labextension install jupyterlab-plotly@1.4.0 --no-build
 RUN jupyter labextension install plotlywidget@1.4.0 --no-build
 RUN jupyter lab build
 
+RUN pip install cfbd
 RUN pip install xgboost
 RUN pip install lightgbm
 
