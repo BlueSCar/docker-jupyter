@@ -5,7 +5,9 @@ on:
     # Publish `master` as Docker `latest` image.
     branches:
       - master
-    dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 4 * * 1'
       
 env:
   IMAGE_NAME: docker-jupyter
